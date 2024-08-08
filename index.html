@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task management app</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/c7aef05bbe.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="frame">
+      <div class="header">
+        <div class="day"></div>
+        <div class="date"></div>
+      </div>
+      <div class="list-container">
+        <ul class="list">
+          <li class="list-item">
+            <input class="checkbox" type="checkbox" name="item1" id="i1" />
+            <label for="i1" class="btn"></label>
+            <svg class="check">
+              <polyline points="1,7 6,11 14,3" />
+            </svg>
+            <div class="task-details">
+              <label for="i1" class="text"><b>Title:</b> Title</label>
+              <p class="description">
+                <b> Description: </b> Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Blanditiis ea, et officiis delectus autem
+                saepe libero quo quibusdam pariatur nihil dolor ipsum.
+                Necessitatibus modi magnam commodi expedita neque dicta minus.
+              </p>
+              <span class="due-date"><b>Due Date:</b> 27-5-24</span>
+            </div>
+            <div class="action-btns">
+              <button class="edit">
+                <i class="fa-regular fa-pen-to-square"></i>
+              </button>
+              <button class="delete"><i class="fa-solid fa-trash"></i></button>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="create-task">
+        <form id="form">
+          <label for="title">Title</label>
+          <input
+            type="text"
+            name="title"
+            id="title"
+            class="title"
+            placeholder="Enter your task title here"
+          />
+          <label for="textarea">Description</label>
+          <textarea
+            name="textarea"
+            id="textarea"
+            placeholder="Write a description for your task"
+          ></textarea>
+          <label for="due-date">Due Date</label>
+          <input type="date" id="due-date" class="due-date" name="due-date" />
+          <button class="submit-btn">Add task</button>
+        </form>
+      </div>
+      <div class="add-task"><span class="plus">+</span>Add new task</div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
